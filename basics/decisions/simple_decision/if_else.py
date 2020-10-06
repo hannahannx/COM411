@@ -1,5 +1,6 @@
+#Creating the varible to ask the activity
 activity = str(input("Please enter the activity to be performed."))
-
+#Creating the branches for the type of statement to be printed out
 if (activity == "calculate"):
   print("Performing calculations...")
 else:
