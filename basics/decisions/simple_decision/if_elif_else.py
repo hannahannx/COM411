@@ -1,5 +1,6 @@
+#Creating the varibles for the direction
 direction = str(input("Towards which direction should I paint (up, down, left or right)?"))
-
+#Creating the branches to show which direction the robot will be painting in
 if (direction == "up"):
   print("I am painting in the upward direction!")
 elif (direction == "down"):
