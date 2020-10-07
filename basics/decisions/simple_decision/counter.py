@@ -21,4 +21,4 @@ if (num3 % 2) == 0:
 else:
   odd = odd + 1
 
-print("There were",even,"even and",odd,"odd numbers")
+print("There were",even,"even and",odd,"odd numbers!")
