@@ -1,4 +1,4 @@
-#This will be a code to demonstrate the use of decisions,nesting and logical operators
+ #This will be a code to demonstrate the use of decisions,nesting and logical operators
 # I will be making a quiz on 3 differemt subjects
 # These subjects will be Maths, English and Biology
 
