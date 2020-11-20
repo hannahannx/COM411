@@ -9,7 +9,10 @@ def cross_bridge(distance_in_steps):
   else:
     print("We must keep going")
 
-#calling the function
-cross_bridge(3)
-cross_bridge(6)
+def run():
+  #calling the function
+  cross_bridge(3)
+  cross_bridge(6)
+
+run()
 

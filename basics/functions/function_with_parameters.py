@@ -6,6 +6,9 @@ def climb_ladder(number_of_steps_remaining,number_of_steps_crossed):
   else:
     print("We are almost there!")
 
-#calling the function
-climb_ladder(5,2)
-climb_ladder(2,5)
+def run():
+  #calling the function
+  climb_ladder(5,2)
+  climb_ladder(2,5)
+
+run()

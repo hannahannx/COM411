@@ -7,5 +7,8 @@ def identify():
   else:
     print("We will be fine.")
 
-#calling the function
-identify()
+def run():
+  #calling the function
+  identify()
+
+run()

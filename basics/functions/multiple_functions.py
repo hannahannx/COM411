@@ -12,5 +12,8 @@ def create_ladder():
   #print out the ladder in total by callng the display_ladder function
   display_ladder(number_of_steps)
 
-#calling the function
-create_ladder()
+def run():
+  #calling the function
+  create_ladder()
+
+run()

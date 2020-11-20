@@ -5,5 +5,8 @@ def listen():
   #PRINTING USER INPUT
   print("That was loud {}!!".format(sound))
 
-#CALLING THE FUNCTION LISTEN
-listen()
+def run():
+  #CALLING THE FUNCTION LISTEN
+  listen()
+
+run()
