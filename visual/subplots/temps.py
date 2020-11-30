@@ -24,7 +24,7 @@ def run():
 #prints out  line grapgh and bar chart with the temperartures
   axes[0].plot(x, y)
   axes[1].bar(x, y)
-   
+     
   #making the layout fit on the page
   plt.tight_layout()
   plt.show()
