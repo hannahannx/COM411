@@ -2,7 +2,7 @@
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
-#Making the sublots to animate open
+#Making the subplots to animate open
 fig, ax = plt.subplots()
 
 #Creating a function to show animation
