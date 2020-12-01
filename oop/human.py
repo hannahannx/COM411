@@ -14,8 +14,8 @@ class Robot:
     self.age = 0
 
   # An instance method
-  def display(self):
-    print(f"I am {self.name}")
+  def __repr__(self):
+    return ("Robot: My name is {} and I am {} years old".format(self.name,self.age))
   
 class Human:
   #Human attribute -constant in caps
@@ -28,10 +28,12 @@ class Human:
     self.energy = Human.MAX_ENERGY
 
   #Showing the name for that specific object to be made
-  def display(self):
-    print("I am {}".format(self.name))
+  def __repr__(self):
+    return ("Human: My name is {} and I am {} years old".format(self.name,self.age))
 
 #creating a object to display the code above 
 if (__name__ == "__main__"):
   human = Human()
-  human.display()
+  robot = Robot()
+  print(repr(human))
+  print(repr(robot))
