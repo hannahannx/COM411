@@ -1,4 +1,6 @@
+#importing modules
 import random
+import matplotlib.pyplot as plt
 
 class Planet:
   #initalising class
@@ -30,15 +32,27 @@ class Universe:
   def generate(self):
     self.newPlanet = Planet()
     self.randomNumbers = random.randint(1,10)
+    self.randomNumbers2 = random.randint(1,10)
+    #random amount of humans to planet
     for i in range(self.randomNumbers):
       print("{} generated".format(i+1))
       human = input("What human would you like to add")
+      self.newPlanet.add_human(human)
+      self.allPlanets = self.newPlanet
+    #random amount of robot to planet
+    for j in range(self.randomNumbers2):
+      print("{} generated".format(j+1))
       robot = input("What robot would you like to add?")
       print()
-      self.newPlanet.add_human(human)
-      self.newPlanet.add_robot(robot)
       self.allPlanets = self.newPlanet
+      self.newPlanet.add_robot(robot)
+      
     print(self.allPlanets)
+
+  def show_populations():
+    pass
+
+
 
 
 #outputting the code
