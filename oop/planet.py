@@ -1,26 +1,25 @@
 class Planet:
   #initalising class
   def __init__(self):
-    self.humans = []
-    self.robots = []
-
+    self.inhabitants = {'humans' : [], 'robots' : []}
+    
   def add_human(self,human):
-    self.humans.append(human)
+    self.inhabitants['humans'].append(human)
     
   def remove_human(self,human):
-    self.humans.remove(human)
+    self.inhabitants['humans'].remove(human)
 
   def add_robot(self,robot):
-    self.robots.append(robot)
+    self.inhabitants['robots'].append(robot)
 
   def remove_robot(self,robot):
-    self.robots.remove(robot)
+    self.inhabitants['robots'].remove(robot)
 
   def __repr__(self):
-    return ("This is a list of robots: {}\nThis is the list of humans {}".format(self.robots,self.humans))
+    return ("This is a dictionry of inhabitants: {}".format(self.inhabitants))
 
   def __str__(self):
-    return ("robots = {}\nhumans =  {}".format(self.robots,self.humans))
+    return ("robots = {}\nhumans =  {}".format(self.inhabitants['robots'],self.inhabitants['humans']))
   
 #outputting the code
 if (__name__ == "__main__"):
