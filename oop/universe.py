@@ -38,7 +38,7 @@ class Universe:
       print("{} generated".format(i+1))
       human = input("What human would you like to add")
       self.newPlanet.add_human(human)
-      print()
+      print("\n\n")
       self.allPlanets = self.newPlanet
     #random amount of robot to planet
     for j in range(self.randomNumbers2):
@@ -49,18 +49,20 @@ class Universe:
       self.newPlanet.add_robot(robot)
       
     print(self.allPlanets)
+    return self.newPlanet
 
   def show_populations(self):
+    total = Universe.generate(planet)
     fig, ax = plt.subplots()
-    counthuman = len(self.allPlanets)
+    counthuman = len(total)
     humanx = range(1,20)
     humany = counthuman
-    ax.bars(humanx,humany,"m")
+    ax.bar(humanx,humany,"m")
 
-    countrobot = len(self.allPlanets)
+    countrobot = len(self.allPlanets[0])
     robotx = range(1,20)
     roboty = countrobot
-    ax.bars(robotx,roboty,"b")
+    ax.bar(robotx,roboty,"b")
     plt.show()
 
 
