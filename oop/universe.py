@@ -27,29 +27,30 @@ class Planet:
 
 class Universe:
   def __init__(self):
-    self.allPlanets = [""]
+    self.allPlanets = []
   
   def generate(self):
-    self.newPlanet = Planet()
+    newPlanet = Planet()
     self.randomNumbers = random.randint(1,10)
     self.randomNumbers2 = random.randint(1,10)
     #random amount of humans to planet
     for i in range(self.randomNumbers):
       print("{} generated".format(i+1))
       human = input("What human would you like to add")
-      self.newPlanet.add_human(human)
-      print("\n\n")
-      self.allPlanets = self.newPlanet
+      print()
+      newPlanet.add_human(human)
+      self.allPlanets.append(newPlanet)
     #random amount of robot to planet
     for j in range(self.randomNumbers2):
       print("{} generated".format(j+1))
       robot = input("What robot would you like to add?")
       print()
-      self.allPlanets = self.newPlanet
-      self.newPlanet.add_robot(robot)
+      self.allPlanets = newPlanet
+      newPlanet.add_robot(robot)
+
       
     print(self.allPlanets)
-    return self.newPlanet
+    return newPlanet
 
   def show_populations(self):
     total = Universe.generate(planet)
